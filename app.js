@@ -77,10 +77,11 @@ let counterProd = 0;
 const nameLocalStorageCar = 'carProducts'; 
 
 window.addEventListener("load", ()=> {
-    if(nameLocalStorageCar == null && localStorage  && localStorage && undefined  && localStorage && ""){
+   
+    myCar = JSON.parse(localStorage.getItem(nameLocalStorageCar)); 
+    if(myCar == null && localStorage  && localStorage && undefined  && localStorage && ""){
         myCar = []
     }
-    myCar = JSON.parse(localStorage.getItem(nameLocalStorageCar)); 
     addCar()
 })
 
