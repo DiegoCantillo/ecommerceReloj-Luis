@@ -145,5 +145,5 @@ productsReloj.forEach((reloj, idCounter) => {
         <span>${reloj.price}$</span>
         <button class="btn-agregar" id="${idCounter}"> Agg <i class="fa-solid fa-cart-arrow-down btn-agregar" id="${idCounter}"></i></button>
     </div>`;
-})
-}
+});
+};
