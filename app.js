@@ -83,7 +83,7 @@ window.addEventListener("load", ()=> {
         myCar = localStorageValue
     }
     addCar()
-})
+});
 
 
 function addCar(){
