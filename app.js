@@ -78,9 +78,9 @@ const nameLocalStorageCar = 'carProducts';
 
 window.addEventListener("load", ()=> {
    
-    myCar = JSON.parse(localStorage.getItem(nameLocalStorageCar)); 
-    if(myCar == null && localStorage  && localStorage && undefined  && localStorage && ""){
-        myCar = []
+    const localStorageValue = JSON.parse(localStorage.getItem(nameLocalStorageCar)); 
+    if(!!localStorageValue){
+        myCar = localStorageValue
     }
     addCar()
 })
